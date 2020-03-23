@@ -180,7 +180,6 @@ cons :: Char -> Text1 -> Text1
 cons = coerce T.cons
 {-# INLINE cons #-}
 
--- Does not guarantee the invatiant that the the string is stripped
 unsafeCons :: Char -> Text -> Text1
 unsafeCons = coerce T.cons
 {-# INLINE unsafeCons #-}
